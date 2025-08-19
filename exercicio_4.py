@@ -1,7 +1,7 @@
 # estacao do ano
 
 
-mes=input('digite o nome|CORRETAMENTE| do mes em que está :')
+mes=input('digite o nome|CORRETAMENTE| do mes em que está :').lower()
 if mes == "janeiro" or mes== "fevereiro" or mes=='março ':
    print('agora e VERAO')
 
