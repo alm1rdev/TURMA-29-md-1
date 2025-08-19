@@ -3,7 +3,7 @@
 
 mes=input('digite o nome|CORRETAMENTE| do mes em que está :')
 if mes == "janeiro" or mes== "fevereiro" or mes=='março ':
-   print('a estaçao atual e VERAO')
+   print('agora e VERAO')
 
 elif mes == "abril" or mes==" maio" or mes=="junho":
    print('agora e OUTONO')

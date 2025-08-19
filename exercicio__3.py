@@ -14,6 +14,8 @@ elif operador=='*':
    print(n1*n2)
 
 elif operador=='/':
-   print(n1 /n2)
+      if n2== 0:
+          print(f'{n1}')
+      else:print( n1/n2)
 
 else:print('erro,escolha um dos operadores indicados antigamente')
