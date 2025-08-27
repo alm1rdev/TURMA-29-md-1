@@ -1,7 +1,8 @@
-digi_palavra=input('digite uma palavra :')
+digi_palavra=input('digite uma palavra :').lower()
 
-inverso=digi_palavra[-1::-1]
+inverso=digi_palavra[-1::-1] # ou [::-1]
+
 if inverso== digi_palavra :
-    print('esta palvra e um palindromo')
+    print(f'{inverso}  é um palindromo')
 else:
-    print('a palavra nao e um palindromo')
+    print('a palavra digitada nao é um palindromo')
