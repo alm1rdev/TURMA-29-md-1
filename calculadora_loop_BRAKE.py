@@ -13,8 +13,8 @@ while True:
     elif numero_2.lower()=='sair':
         print('calculaora encerrada')
     if numero_1.isdigit() and numero_2.isdigit():
-        numero_1= float(numero_1)
-        numero_2= float(numero_2)
+        numero_1= int(numero_1)
+        numero_2= int(numero_2)
 
         if operador =='+':
             print(numero_1+numero_2)
