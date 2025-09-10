@@ -25,3 +25,9 @@ curso2= 'Turma 29 Softex'
 tudo_minusculo=curso.lower()
 print(tudo_minusculo)
 # o print vai imprimir tudo da variavel em minusculo
+
+
+
+
+
+
