@@ -3,3 +3,4 @@ try:
     print(f'o numero digitdo foi {numero}')
 
 except:
+    print('digite apenas numeros')
