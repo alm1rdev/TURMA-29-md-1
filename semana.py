@@ -2,7 +2,7 @@
 #dentro da lista segunda , terca ,quarta,quinta,sexta
 # o usuario vai poder inserir,apagar,listar
 # e sair suas atividades diarias
-
+import os
 semana=[[],[],[],[],[]]
 
 while True:
@@ -76,22 +76,49 @@ while True:
          print('digite apenas numeros')  
     except IndexError:
          print('nao tem nenhum compromisso')  
-
+ 
     if o_q_fazer =='l':
-                    ver_qual_dia= int(input('quer ver os compromissos de qual dia:'))
+        
+        for indice,compromissos in enumerate(semana,start=1):
+                
+                    ver_qual_dia= input('quer ver os compromissos de qual dia, ou digite sair para outras ' 
+                    'escolhas:')
+                    if ver_qual_dia=='sair':
+                         break
+                    else:
+                         ver_qual_dia=int(ver_qual_dia)
+
+                    compromissos=semana[ver_qual_dia]
 
                     if ver_qual_dia==0:
-                        print(semana[0])
+                        os.system('cls')
+                        print('os comprmissos para esse dia sao:')
+                        print(f'{indice} - {compromissos}')
+                        
+
                     elif ver_qual_dia ==1:
-                        print(semana[1])
+                        os.system('cls')
+                        print('os comprmissos para esse dia sao:')
+                        print(f'{indice} - {compromissos}')
+                        
                     elif ver_qual_dia==2:
-                        print(semana[2])
+                        os.system('cls')
+                        print('os comprmissos para esse dia sao:')
+                        print(f'{indice} - {compromissos}')
+                        
                     elif ver_qual_dia==3:
-                        print(semana[3])
+                        os.system('cls')
+                        print('os comprmissos para esse dia sao:')
+                        print(f'{indice} - {compromissos}')
+                        
                     elif ver_qual_dia==4:
-                        print(semana[4])
+                        os.system('cls')
+                        print('os comprmissos para esse dia sao:')
+                        print(f'{indice} - {compromissos}')
+                        continue
                     else:
                         print ('digite somente numeros!')
+                        
 
 
 
