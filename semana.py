@@ -81,7 +81,8 @@ while True:
         
         for indice,compromissos in enumerate(semana,start=1):
                 
-                    ver_qual_dia= input('quer ver os compromissos de qual dia, ou digite sair para outras ' 
+                    ver_qual_dia= input('quer ver os compromissos de qual dia 0==seg, 1==ter,2==quar ,3==quinta,' \
+                    '4==sex, ou digite sair para outras ' 
                     'escolhas:')
                     if ver_qual_dia=='sair':
                          break
@@ -89,11 +90,12 @@ while True:
                          ver_qual_dia=int(ver_qual_dia)
 
                     compromissos=semana[ver_qual_dia]
-
+               
                     if ver_qual_dia==0:
                         os.system('cls')
                         print('os comprmissos para esse dia sao:')
                         print(f'{indice} - {compromissos}')
+                        
                         
 
                     elif ver_qual_dia ==1:
