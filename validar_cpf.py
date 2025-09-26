@@ -6,12 +6,18 @@
 
 
 #ex:
+import sys
+
+cpfusuario=input('digite cpf').replace('.','').replace('-','')
+
+primeiro_digito=cpfusuario[0]
+
+repeticao=primeiro_digito*len(cpfusuario)
 
 
-cpf='197.760.870-19'.replace('.','').replace('-','')
+# cpf='197.760.870-19'.replace('.','').replace('-','')
 
-nove_digitos=cpf[:9]
-
+nove_digitos=cpfusuario[:9]
 contador1=10
 
 somados_nove=0

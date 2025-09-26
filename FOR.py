@@ -1,7 +1,7 @@
 curso='turma'
 
-for l in range(10,-1,-1):
-    print(l)
+# for l in range(10,-1,-1):
+#     print(l)
 
 nome='almir'
 novo_nome=''
