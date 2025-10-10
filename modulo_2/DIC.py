@@ -36,6 +36,38 @@ perguntas=[
     },
 
     ]
-for indice in perguntas:
-    print(perguntas[0],['pergunta'])
+qtd_acertos=0
 
+for pergunta in perguntas:
+    print('Pergunta: ',pergunta['pergunta'])
+    print()
+
+    opcoes=pergunta['opcoes']
+
+    for i,opcao in enumerate(opcoes):
+        print(f'{i})', opcao)
+        print()
+
+    escolha =input('escolha uma alternativa:  ')
+
+    resposta=False
+
+    escolha_int=None
+
+    qtd_escolha=len(opcoes)
+    
+
+    if escolha.isdigit():
+        escolha_int=int(escolha)
+    if escolha_int is not None:
+        if escolha_int>=0 and escolha_int<=qtd_escolha:
+            if opcoes[escolha_int]==pergunta['resposta']:
+                resposta=True
+
+    if resposta:
+        print('responda certa (☞ﾟヮﾟ)☞  ✔ ☜(ﾟヮﾟ☜')
+        qtd_acertos+=1
+    else:
+        print('resposta errada ¯\_(ツ)_/¯')
+
+print(f'voce acertou {qtd_acertos} de {len(perguntas)}')
