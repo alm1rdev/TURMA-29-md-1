@@ -52,6 +52,7 @@ eixo_x=sorted(pontos)
 print(eixo_x)
 
 
+# print(funcao(lambda x,y :x + y ,5,4))
 
 #resolucao do professor
 
