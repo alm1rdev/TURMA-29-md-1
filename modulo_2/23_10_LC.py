@@ -36,7 +36,7 @@ atualizar_produtos=[
      for produto in produtos
 
 ]
-# print(*atualizar_produtos,sep='\n')
+print(*atualizar_produtos,sep='\n')
 
 saida=[
     f'nome:{produto['nome']}-valor:{produto['preco']:.2f}'

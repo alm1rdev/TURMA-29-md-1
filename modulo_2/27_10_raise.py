@@ -35,8 +35,9 @@ def conta(digite):
      
      else:
             digite=float(digite)
-        
-            return 10/digite
+            
+            resultado = 10/digite
      finally:
          print('foi isso entao👍')
-print(conta)
+     
+     print(resultado)
